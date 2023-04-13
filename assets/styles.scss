@@ -112,8 +112,35 @@ body {
     z-index: 100;
     background: #fff;
 
-    .filter_container {
+    .filter_container,
+    .search-wrapper {
       margin-top: 0rem;
+    }
+  }
+
+  &.localmarketplace {
+    .filter_container {
+      margin-top: -0.4rem;
+    }
+
+    button {
+      &:nth-child(1) {
+        color: #5735f0;
+        border: 1px solid #5735f0;
+      }
+    }
+
+    .search-wrapper {
+      margin-top: 0rem;
+    }
+
+    &.sticky {
+      .filter_container {
+        margin-top: 1rem;
+      }
+      .search-wrapper {
+        margin-top: 0.8rem;
+      }
     }
   }
 }
@@ -368,6 +395,21 @@ body {
       border: none;
     }
   }
+
+  &.localmarketplace {
+    .filters_drawer_body {
+      .card {
+        border-radius: 0px !important;
+      }
+    }
+    .card-header {
+      padding: 0.75rem 1.25rem;
+    }
+
+    .filters_drawer_footer button:nth-child(2) {
+      background: linear-gradient(180deg, #5735f0 0%, #7940f2 100%);
+    }
+  }
 }
 // FILTER DRWAER
 
@@ -497,6 +539,22 @@ body {
   a.seatplay.active {
     border-top: 4px solid #fb2b4e;
   }
+
+  .suggest_store_container {
+    position: absolute;
+    top: -3.2rem;
+    right: 1.6rem;
+
+    button {
+      background: #fff;
+      border: 2px solid #5735f0;
+      color: #5735f0;
+      height: 40px;
+      padding: 0px 20px;
+      border-radius: 50px;
+      font-weight: 600;
+    }
+  }
 }
 // NAVIGATION
 
@@ -512,7 +570,7 @@ body {
   }
 
   .share_to_unlock {
-    background: linear-gradient(180deg, #FB2B4E 0%, #FF6937 100%);
+    background: linear-gradient(180deg, #fb2b4e 0%, #ff6937 100%);
     border-radius: 480px;
     height: 56px;
     width: 100%;
@@ -529,3 +587,26 @@ body {
   }
 }
 // PRODUCT
+
+// LOCALMARKERPLACE
+.store-block {
+  padding: 5px;
+
+  .store-img {
+    min-height: 288px;
+    object-fit: cover;
+  }
+
+  .store-block-caption {
+    h2,
+    p {
+      text-align: left !important;
+      width: 100%;
+    }
+  }
+
+  .a {
+    height: auto;
+  }
+}
+// LOCALMARKERPLACE

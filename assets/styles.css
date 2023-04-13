@@ -89,8 +89,25 @@ body {
   z-index: 100;
   background: #fff;
 }
-.upper_filter_container.sticky .filter_container {
+.upper_filter_container.sticky .filter_container,
+.upper_filter_container.sticky .search-wrapper {
   margin-top: 0rem;
+}
+.upper_filter_container.localmarketplace .filter_container {
+  margin-top: -0.4rem;
+}
+.upper_filter_container.localmarketplace button:nth-child(1) {
+  color: #5735f0;
+  border: 1px solid #5735f0;
+}
+.upper_filter_container.localmarketplace .search-wrapper {
+  margin-top: 0rem;
+}
+.upper_filter_container.localmarketplace.sticky .filter_container {
+  margin-top: 1rem;
+}
+.upper_filter_container.localmarketplace.sticky .search-wrapper {
+  margin-top: 0.8rem;
 }
 
 .search-wrapper {
@@ -304,6 +321,15 @@ body {
   border-radius: 480px;
   border: none;
 }
+.filters_drawer.localmarketplace .filters_drawer_body .card {
+  border-radius: 0px !important;
+}
+.filters_drawer.localmarketplace .card-header {
+  padding: 0.75rem 1.25rem;
+}
+.filters_drawer.localmarketplace .filters_drawer_footer button:nth-child(2) {
+  background: linear-gradient(180deg, #5735f0 0%, #7940f2 100%);
+}
 
 .checkbox__wrapper .checkbox {
   font-weight: 300;
@@ -407,6 +433,20 @@ body {
 .seat_market_container a.seatplay.active {
   border-top: 4px solid #fb2b4e;
 }
+.seat_market_container .suggest_store_container {
+  position: absolute;
+  top: -3.2rem;
+  right: 1.6rem;
+}
+.seat_market_container .suggest_store_container button {
+  background: #fff;
+  border: 2px solid #5735f0;
+  color: #5735f0;
+  height: 40px;
+  padding: 0px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+}
 
 .product .seat_left {
   color: #5b5374;
@@ -417,7 +457,7 @@ body {
   height: 35px !important;
 }
 .product .share_to_unlock {
-  background: linear-gradient(180deg, #FB2B4E 0%, #FF6937 100%);
+  background: linear-gradient(180deg, #fb2b4e 0%, #ff6937 100%);
   border-radius: 480px;
   height: 56px;
   width: 100%;
@@ -431,4 +471,21 @@ body {
   font-weight: 600;
   font-size: 0.95rem;
   letter-spacing: 2px;
+}
+
+.store-block {
+  padding: 5px;
+}
+.store-block .store-img {
+  min-height: 288px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.store-block .store-block-caption h2,
+.store-block .store-block-caption p {
+  text-align: left !important;
+  width: 100%;
+}
+.store-block .a {
+  height: auto;
 }/*# sourceMappingURL=styles.css.map */

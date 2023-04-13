@@ -2170,7 +2170,7 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <header class="bg-white fixed-top section">
+    <header class="d-none d-md-block bg-white fixed-top section">
       <div class="container">
         <nav class="navbar px-0 navbar-expand-lg navbar-light bg-white">
           <a class="navbar-brand" href="https://www.wonupshop.com/home">
@@ -2333,10 +2333,459 @@
         </nav>
       </div>
     </header>
+
+    <!-- SAMEER -->
+    <header class="mobile_header_container d-block d-md-none">
+      <div
+        style="overflow: hidden"
+        class="mb_header d-flex align-items-center justify-content-between py-2 px-3 position-relative"
+      >
+        <div>
+          <img src="./assets/images/logo.svg" alt="" />
+        </div>
+        <div class="d-flex align-items-center">
+          <div class="d-flex align-items-center pt-2">
+            <h5 class="text-dark mb-0 font-weight-bold">$0</h5>
+            <img
+              class="pl-1 rounded-3"
+              src="./assets/images/bucket.svg"
+              alt=""
+            />
+          </div>
+          <div class="pl-3">
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div style="display: none" class="main_sidebar_container"></div>
+        <div style="right: -100%" class="sidebar_container">
+          <div class="sidebar_header py-2 d-flex justify-content-between px-3">
+            <div class="d-flex align-items-center">
+              <div class="profile_pic">WA</div>
+              <p class="mb-0 pl-2 font-weight-bold">
+                William <br />
+                Ameni
+              </p>
+            </div>
+            <div class="d-flex align-items-center">
+              <p class="pb-0 mb-0 h5 pr-2">$0</p>
+              <img
+                src="https://www.wonupshop.com/theme/Wonupshop2020/img/coin.png"
+                alt=""
+              />
+              <img
+                class="ml-3 cross_sidebar"
+                src="./assets/images/cross2.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="sidebar_body px-3">
+            <ul class="list-unstyled">
+              <li>
+                <img
+                  class="mr-3"
+                  src="./assets/images/sidebar_links/i1.svg"
+                  alt=""
+                />
+                My Wishlist
+              </li>
+              <li>
+                <img
+                  class="mr-3"
+                  src="./assets/images/sidebar_links/i2.svg"
+                  alt=""
+                />
+                My Reserved Seats
+              </li>
+              <li>
+                <img
+                  class="mr-3"
+                  src="./assets/images/sidebar_links/i3.svg"
+                  alt=""
+                />
+                My Purchases
+              </li>
+              <li>
+                <img
+                  class="mr-3"
+                  src="./assets/images/sidebar_links/i4.svg"
+                  alt=""
+                />
+                My Winnings
+              </li>
+              <li>
+                <img
+                  class="mr-3"
+                  src="./assets/images/sidebar_links/i5.svg"
+                  alt=""
+                />
+                My Profile
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar_footer px-3">
+            <img
+              class="mr-3"
+              src="./assets/images/sidebar_links/i6.svg"
+              alt=""
+            />
+            Sign Out
+          </div>
+        </div>
+        <!-- SIDEBAR -->
+      </div>
+    </header>
+
+    <div
+      class="upper_filter_container localmarketplace pb-3 px-3 d-block d-md-none"
+    >
+      <div class="filter_container align-items-center justify-content-between">
+        <button
+          class="open_filter_drawer d-flex align-items-center justify-content-between"
+        >
+          <img src="./assets/images/filter2.svg" alt="" />
+          <p class="filter_text">Filters</p>
+        </button>
+        <button class="to_open_search">
+          <img src="./assets/images/magnifier.svg" alt="" />
+        </button>
+      </div>
+
+      <!-- SEARCH OPEN AND CLOSE -->
+      <div style="display: none" class="search-wrapper">
+        <div class="search-input-wrapper">
+          <label for="">Search a product</label>
+          <div class="search-icon">
+            <img src="./assets/images/magnifier.svg" alt="" />
+          </div>
+          <input type="text" class="form-control_c" placeholder="Search..." />
+          <div class="search-close-icon">
+            <img src="./assets/images/cross.svg" alt="" />
+          </div>
+
+          <div class="search-suggestions">
+            <ul>
+              <li>Apple</li>
+              <li>Banana</li>
+              <li>Orange</li>
+              <li>Pineapple</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- SEARCH OPEN AND CLOSE -->
+    </div>
+
+    <!-- FILTER -->
+    <div style="bottom: -100%" class="filters_drawer localmarketplace">
+      <div
+        class="filters_drawer_heading px-3 py-3 d-flex justify-content-between w-100"
+      >
+        <p class="mb-0 font-weight-bold">Filter Products</p>
+        <img
+          class="close_filter_drawer"
+          src="./assets/images/cross2.svg"
+          alt=""
+        />
+      </div>
+      <div class="filters_drawer_body">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  By City <i class="fa fa-chevron-up"></i>
+                </button>
+              </h5>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <div>
+                  <div class="checkbox__wrapper">
+                    <label class="checkbox">
+                      <span class="label">All Cities</span>
+                      <input type="checkbox" class="checkbox__input" checked />
+                      <span class="checkbox__check">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="checkbox__svg"
+                        >
+                          <path d="M 1 7 L 4 10 L 10 2" fill="none"></path>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="mt-3 checkbox__wrapper">
+                    <label class="checkbox">
+                      <span class="label">Gatineau</span>
+                      <input type="checkbox" class="checkbox__input" checked />
+                      <span class="checkbox__check">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="checkbox__svg"
+                        >
+                          <path d="M 1 7 L 4 10 L 10 2" fill="none"></path>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="mt-3 checkbox__wrapper">
+                    <label class="checkbox">
+                      <span class="label">Toronto</span>
+                      <input type="checkbox" class="checkbox__input" checked />
+                      <span class="checkbox__check">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="checkbox__svg"
+                        >
+                          <path d="M 1 7 L 4 10 L 10 2" fill="none"></path>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="true"
+                  aria-controls="collapseTwo"
+                >
+                  By City <i class="fa fa-chevron-down"></i>
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse show"
+              aria-labelledby="headingTwo"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <div>
+                  <div class="checkbox__wrapper">
+                    <label class="checkbox">
+                      <span class="label">All Regions</span>
+                      <input type="checkbox" class="checkbox__input" checked />
+                      <span class="checkbox__check">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="checkbox__svg"
+                        >
+                          <path d="M 1 7 L 4 10 L 10 2" fill="none"></path>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="mt-3 checkbox__wrapper">
+                    <label class="checkbox">
+                      <span class="label">Aylmer</span>
+                      <input type="checkbox" class="checkbox__input" checked />
+                      <span class="checkbox__check">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="checkbox__svg"
+                        >
+                          <path d="M 1 7 L 4 10 L 10 2" fill="none"></path>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="mt-3 checkbox__wrapper">
+                    <label class="checkbox">
+                      <span class="label">Region 2</span>
+                      <input type="checkbox" class="checkbox__input" checked />
+                      <span class="checkbox__check">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="checkbox__svg"
+                        >
+                          <path d="M 1 7 L 4 10 L 10 2" fill="none"></path>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="mt-3 checkbox__wrapper">
+                    <label class="checkbox">
+                      <span class="label">Region 3</span>
+                      <input type="checkbox" class="checkbox__input" checked />
+                      <span class="checkbox__check">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="checkbox__svg"
+                        >
+                          <path d="M 1 7 L 4 10 L 10 2" fill="none"></path>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="mt-3 checkbox__wrapper">
+                    <label class="checkbox">
+                      <span class="label">Region 4</span>
+                      <input type="checkbox" class="checkbox__input" checked />
+                      <span class="checkbox__check">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="checkbox__svg"
+                        >
+                          <path d="M 1 7 L 4 10 L 10 2" fill="none"></path>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="mt-3 checkbox__wrapper">
+                    <label class="checkbox">
+                      <span class="label">Region 5</span>
+                      <input type="checkbox" class="checkbox__input" checked />
+                      <span class="checkbox__check">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="checkbox__svg"
+                        >
+                          <path d="M 1 7 L 4 10 L 10 2" fill="none"></path>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="true"
+                  aria-controls="collapseThree"
+                >
+                  By Deposit <i class="fa fa-chevron-down"></i>
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse show"
+              aria-labelledby="headingThree"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                <div>
+                  <div class="checkbox__wrapper">
+                    <label class="checkbox">
+                      <span class="label">All Regions</span>
+                      <input type="checkbox" class="checkbox__input" checked />
+                      <span class="checkbox__check">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="checkbox__svg"
+                        >
+                          <path d="M 1 7 L 4 10 L 10 2" fill="none"></path>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="mt-3 checkbox__wrapper">
+                    <label class="checkbox">
+                      <span class="label">1$ to 5$</span>
+                      <input type="checkbox" class="checkbox__input" checked />
+                      <span class="checkbox__check">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="checkbox__svg"
+                        >
+                          <path d="M 1 7 L 4 10 L 10 2" fill="none"></path>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="mt-3 checkbox__wrapper">
+                    <label class="checkbox">
+                      <span class="label">5$ to 10$</span>
+                      <input type="checkbox" class="checkbox__input" checked />
+                      <span class="checkbox__check">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="checkbox__svg"
+                        >
+                          <path d="M 1 7 L 4 10 L 10 2" fill="none"></path>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="mt-3 checkbox__wrapper">
+                    <label class="checkbox">
+                      <span class="label">10$ to 50$</span>
+                      <input type="checkbox" class="checkbox__input" checked />
+                      <span class="checkbox__check">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="checkbox__svg"
+                        >
+                          <path d="M 1 7 L 4 10 L 10 2" fill="none"></path>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filters_drawer_footer d-flex justify-content-center">
+        <button>CLEAR ALL</button>
+        <button>Apply</button>
+      </div>
+    </div>
+    <!-- FILTER -->
+
+    <!-- NAVIGATION -->
+    <div class="seat_market_container d-flex d-md-none">
+      <a class="local active" href="./index.html">Local Marketplace</a>
+      <a class="seatplay" href="">SeatPlay - 80% OFF</a>
+
+      <!-- SUGGEST STORE -->
+      <div class="suggest_store_container">
+        <button>SUGGEST STORE</button>
+      </div>
+      <!-- SUGGEST STORE -->
+    </div>
+    <!-- NAVIGATION -->
+    <!-- SAMEER -->
+
     <section class="visit-stores">
       <!-- <h1 class="text-center page-title">Explore and buy when convenient!</h1> -->
       <div class="container slim-grid mb-5">
-        <div class="row mb-4">
+        <!-- <div class="row mb-4">
           <div class="col-sm-12">
             <div class="row">
               <div class="col-sm-5">
@@ -2392,7 +2841,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="row">
           <div class="col-sm-6 col-lg-4">
             <div class="store-block hover-effect position-relative">
@@ -3735,6 +4184,115 @@
         </div>
       </div>
     </div>
+
+    <!-- First, load jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script>
+      // ACCORDION
+      document.addEventListener("DOMContentLoaded", function () {
+        var buttons = document.querySelectorAll(
+          '#accordion button[data-toggle="collapse"]'
+        );
+
+        for (var i = 0; i < buttons.length; i++) {
+          buttons[i].addEventListener("click", function () {
+            var icon = this.querySelector(".fa");
+            if (icon.classList.contains("fa-chevron-down")) {
+              icon.classList.remove("fa-chevron-down");
+              icon.classList.add("fa-chevron-up");
+            } else {
+              icon.classList.remove("fa-chevron-up");
+              icon.classList.add("fa-chevron-down");
+            }
+          });
+        }
+      });
+      // ACCORDION
+
+      var searchFilterCont = document.querySelector(".filter_container");
+      var searchIcon = document.querySelector(".to_open_search");
+      var searchWrapper = document.querySelector(".search-wrapper");
+      var searchInput = document.querySelector(".search-input-wrapper input");
+      var searchCloseIcon = document.querySelector(".search-close-icon");
+      var searchSuggestions = document.querySelector(".search-suggestions");
+      var hamburgerMenu = document.querySelector(".hamburger-menu");
+      var sidebar = document.querySelector(".sidebar_container");
+      var sidebarShadow = document.querySelector(".main_sidebar_container");
+      var crossSidebar = document.querySelector(".cross_sidebar");
+      var openFilterDrawer = document.querySelector(".open_filter_drawer");
+      var filtersDrawer = document.querySelector(".filters_drawer");
+      var closeFilterDrawer = document.querySelector(".close_filter_drawer");
+      var mbHeader = document.querySelector(".mb_header");
+      var inputInnerSearchIcon = document.querySelector(".search-icon");
+
+      // SEARCH FIELD
+      searchIcon.addEventListener("click", function () {
+        searchWrapper.classList.toggle("active");
+        searchInput.focus();
+        searchWrapper.style.display = "block";
+        searchFilterCont.style.display = "none";
+      });
+
+      searchCloseIcon.addEventListener("click", function () {
+        searchWrapper.classList.remove("active");
+        searchFilterCont.style.display = "flex";
+        searchWrapper.style.display = "none";
+      });
+
+      // SEARCH SUGGESTIONS
+      searchInput.addEventListener("focus", function () {
+        searchSuggestions.classList.add("active");
+        inputInnerSearchIcon.style.display = "none";
+        searchInput.style.padding = "0px 30px 0px 18px";
+      });
+
+      searchInput.addEventListener("blur", function () {
+        searchSuggestions.classList.remove("active");
+        inputInnerSearchIcon.style.display = "flex";
+        searchInput.style.padding = "0px 30px 0px 40px";
+      });
+      // SEARCH FIELD
+
+      // SIDEBAR
+      hamburgerMenu.addEventListener("click", function () {
+        sidebar.style.right = "0%";
+        sidebarShadow.style.display = "block";
+        mbHeader.style.overflow = "revert";
+        document.body.style.overflow = "hidden";
+      });
+
+      crossSidebar.addEventListener("click", function () {
+        sidebar.style.right = "-100%";
+        sidebarShadow.style.display = "none";
+        mbHeader.style.overflow = "hidden";
+        document.body.style.overflow = "auto";
+      });
+      // SIDEBAR
+
+      // FILTER DRWAER
+      openFilterDrawer.addEventListener("click", function () {
+        filtersDrawer.style.bottom = "0%";
+      });
+      closeFilterDrawer.addEventListener("click", function () {
+        filtersDrawer.style.bottom = "-100%";
+      });
+      // FILTER DRWAER
+
+      // FILTER ACTIONS STICKY
+      const filterContainer = document.querySelector(".upper_filter_container");
+      const offsetTop = filterContainer.offsetTop;
+      function handleScroll() {
+        if (window.pageYOffset > offsetTop) {
+          filterContainer.classList.add("sticky");
+        } else {
+          filterContainer.classList.remove("sticky");
+        }
+      }
+      window.addEventListener("scroll", handleScroll);
+      // FILTER ACTIONS STICKY
+    </script>
   </body>
   <grammarly-desktop-integration
     data-grammarly-shadow-root="true"
