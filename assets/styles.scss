@@ -7,6 +7,10 @@ body {
   border: none;
   border-color: #140f26 !important;
 }
+
+.marketplace-products {
+  background: transparent;
+}
 // GENERAL
 
 // TOP HEADER
@@ -71,32 +75,46 @@ body {
 // HAMBURGER AND LOGO HEADER HEADER
 
 // FILTER BTNS
-.filter_container {
-  display: flex;
-  margin-top: 1.2rem;
+.upper_filter_container {
+  .filter_container {
+    display: flex;
+    margin-top: 1.2rem;
 
-  button {
-    background: none;
-    border: 0px;
+    button {
+      background: none;
+      border: 0px;
 
-    &:nth-child(1) {
-      color: #fb2b4e;
-      font-weight: 600;
-      border: 1px solid #fb2b4e;
-      padding: 8px 22px;
-      border-radius: 50px;
+      &:nth-child(1) {
+        color: #fb2b4e;
+        font-weight: 600;
+        border: 1px solid #fb2b4e;
+        padding: 8px 22px;
+        border-radius: 50px;
 
-      p {
-        text-transform: uppercase;
-        letter-spacing: 1px;
+        p {
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
       }
+    }
+
+    .filter_text {
+      margin-bottom: 0px;
+      padding-left: 5px;
+      padding-top: -1px;
     }
   }
 
-  .filter_text {
-    margin-bottom: 0px;
-    padding-left: 5px;
-    padding-top: -1px;
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+
+    .filter_container {
+      margin-top: 0rem;
+    }
   }
 }
 // FILTER BTNS
@@ -215,8 +233,9 @@ body {
   left: 0%;
   width: 100%;
   height: 100%;
-  background: #00000036;
+  background: #420a142f;
   transition: 0.4s;
+  z-index: 10;
 }
 // SIDEBAR SHADOW
 
@@ -423,3 +442,90 @@ body {
   }
 }
 // FILTER CHECKBOX
+
+// FOOTER
+.footer {
+  .row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .round-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+// FOOTER
+
+// NAVIGATION
+.seat_market_container {
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  display: flex;
+  width: 100%;
+  z-index: 5;
+  background: #ffffff;
+
+  a {
+    width: 50%;
+    color: #5b5374;
+    border-top: 4px solid #e3e0ec;
+    text-align: center;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  a:nth-child(1) {
+    border-right: 1px solid #e3e0ec;
+  }
+
+  a.active {
+    color: #140f26;
+    font-weight: 700;
+  }
+
+  a.local.active {
+    border-top: 4px solid #5735f0;
+  }
+
+  a.seatplay.active {
+    border-top: 4px solid #fb2b4e;
+  }
+}
+// NAVIGATION
+
+// PRODUCT
+.product {
+  .seat_left {
+    color: #5b5374;
+    font-size: 14px;
+  }
+  .title {
+    letter-spacing: 0rem;
+    height: 35px !important;
+  }
+
+  .share_to_unlock {
+    background: linear-gradient(180deg, #FB2B4E 0%, #FF6937 100%);
+    border-radius: 480px;
+    height: 56px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+  }
+}
+// PRODUCT

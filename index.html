@@ -3679,7 +3679,7 @@
       </div>
     </header>
 
-    <div class="py-3 px-3">
+    <div class="upper_filter_container py-3 px-3 d-block d-md-none">
       <div class="filter_container align-items-center justify-content-between">
         <button
           class="open_filter_drawer d-flex align-items-center justify-content-between"
@@ -4002,6 +4002,13 @@
       </div>
     </div>
     <!-- FILTER -->
+
+    <!-- NAVIGATION -->
+    <div class="seat_market_container d-flex d-md-none">
+      <a class="local active" href="./index.html">Local Marketplace</a>
+      <a class="seatplay active" href="">SeatPlay - 80% OFF</a>
+    </div>
+    <!-- NAVIGATION -->
     <!-- SAMEER -->
 
     <section class="grab-a-seat">
@@ -4055,6 +4062,8 @@
                 >
                   <span></span>
                 </a>
+
+                <!-- SAMEER -->
                 <div class="col-md-6 col-lg-4 col-xl-3">
                   <a
                     href="#"
@@ -4065,24 +4074,26 @@
                     <span></span> </a
                   ><a href="/referrals" class="d-block product grey">
                     <span class="text-left d-block seats-left">
-                      <img
+                      <!-- <img
                         src="https://www.wonupshop.com/theme/Wonupshop2020/img/group.svg"
                         alt=""
-                      />
+                      /> -->
                       <img
+                        class="mb-3"
                         src="https://www.wonupshop.com/theme/Wonupshop2020/img/icon-locked.png"
                         alt=""
                       />
-                      <span style="line-height: 30px"
-                        >Share to unlock<!--	span-->
-                        <span
+                      <!-- <span style="line-height: 30px"
+                        >Share to unlock -->
+                      <!--	span-->
+                      <!-- <span
                           class="mp-tag"
                           src="/store-details/Wavv_Global/6151"
                           ><img
                             src="https://www.wonupshop.com/theme/Wonupshop2020/img/store.svg"
                             alt=""
-                        /></span>
-                      </span>
+                        /></span> -->
+                      <!-- </span> -->
 
                       <div class="product-img">
                         <picture>
@@ -4098,25 +4109,35 @@
                       <h2>Wavv Element ANC Headphones</h2>
                       <div class="row prices m-0">
                         <div class="col-6 pl-0 retail-price">
-                          <h3 class="text-left">Retail Price</h3>
-                          <div class="price-1 text-left">$189.95</div>
+                          <h3 class="pb-0 text-left">Retail Price</h3>
+                          <div class="price-1 h5 font-weight-bold pt-1 text-left">$189.95</div>
                         </div>
                         <div class="col-6 pr-0 winner-price">
-                          <h3 class="text-right">Winner Price</h3>
-                          <div class="price-2 text-right">80% OFF</div>
+                          <h3 class="pb-0 text-right">Winner Price</h3>
+                          <div class="price-2 h5 font-weight-bold pt-1 text-right">80% OFF</div>
                         </div>
+                      </div>
+                      <div>
+                        <button class="share_to_unlock">
+                          <img src="./assets/images/share.svg" alt="">
+                          share to unlock
+                        </button>
                       </div>
                     </span></a
                   >
                 </div>
+                <!-- SAMEER -->
 
+                <!-- SAMEER -->
                 <div class="col-md-6 col-lg-4 col-xl-3">
                   <a
                     href="/seatplay/view/25_Allo_Mon_Coco_Gift_Card/17633"
                     class="d-block product"
                   >
+                    <p class="seat_left mb-2 text-left font-weight-bold">
+                      10 Seats Left
+                    </p>
                     <span class="text-left d-block seats-left">
-                      10 Seats
                       <span style="line-height: 30px"><!--	span--> </span>
 
                       <div class="product-img">
@@ -4130,20 +4151,29 @@
                         </picture>
                       </div>
 
-                      <h2>$25 Allo Mon Coco Gift Card</h2>
+                      <h2 class="title">$25 Allo Mon Coco Gift Card</h2>
                       <div class="row prices m-0">
                         <div class="col-6 pl-0 retail-price">
-                          <h3 class="text-left">Retail Price</h3>
-                          <div class="price-1 text-left">$25.00</div>
+                          <h3 class="pb-0 text-left">Retail Price</h3>
+                          <div
+                            class="price-1 h5 font-weight-bold pt-1 text-left"
+                          >
+                            $25.00
+                          </div>
                         </div>
                         <div class="col-6 pr-0 winner-price">
-                          <h3 class="text-right">Winner Price</h3>
-                          <div class="price-2 text-right">$5.58</div>
+                          <h3 class="pb-0 text-right">Winner Price</h3>
+                          <div
+                            class="price-2 h5 font-weight-bold pt-1 text-right"
+                          >
+                            $5.58
+                          </div>
                         </div>
                       </div>
                     </span></a
                   >
                 </div>
+                <!-- SAMEER -->
 
                 <div class="col-md-6 col-lg-4 col-xl-3">
                   <a
@@ -4530,7 +4560,7 @@
                 </picture>
               </div>
               <h5>In the News</h5>
-              <p>Coming soon</p>
+              <p>We’ve appeared in several newspapers and other media.</p>
             </div>
             <div class="col-sm-4">
               <a href="/partners" class="round-icon">
@@ -4551,7 +4581,7 @@
       </div>
       <div class="container footer-menu">
         <div class="row align-items-center">
-          <div class="col-md-3">
+          <div class="col-md-3 d-flex justify-content-center pb-4 pb-md-0">
             <a class="" href="/home">
               <picture>
                 <img
@@ -5625,6 +5655,7 @@
       var filtersDrawer = document.querySelector(".filters_drawer");
       var closeFilterDrawer = document.querySelector(".close_filter_drawer");
       var mbHeader = document.querySelector(".mb_header");
+      var inputInnerSearchIcon = document.querySelector(".search-icon");
 
       // SEARCH FIELD
       searchIcon.addEventListener("click", function () {
@@ -5643,10 +5674,14 @@
       // SEARCH SUGGESTIONS
       searchInput.addEventListener("focus", function () {
         searchSuggestions.classList.add("active");
+        inputInnerSearchIcon.style.display = "none";
+        searchInput.style.padding = "0px 30px 0px 18px";
       });
 
       searchInput.addEventListener("blur", function () {
         searchSuggestions.classList.remove("active");
+        inputInnerSearchIcon.style.display = "flex";
+        searchInput.style.padding = "0px 30px 0px 40px";
       });
       // SEARCH FIELD
 
@@ -5674,6 +5709,19 @@
         filtersDrawer.style.bottom = "-100%";
       });
       // FILTER DRWAER
+
+      // FILTER ACTIONS STICKY
+      const filterContainer = document.querySelector(".upper_filter_container");
+      const offsetTop = filterContainer.offsetTop;
+      function handleScroll() {
+        if (window.pageYOffset > offsetTop) {
+          filterContainer.classList.add("sticky");
+        } else {
+          filterContainer.classList.remove("sticky");
+        }
+      }
+      window.addEventListener("scroll", handleScroll);
+      // FILTER ACTIONS STICKY
     </script>
   </body>
 </html>
